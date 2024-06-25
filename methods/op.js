@@ -11,6 +11,15 @@ const fname = users.filter(user => user.age < 30).map(user => user.firstName);
 
 console.log(fname);
 
+const fname2 = users.reduce((acc, curr) => {
+  if(curr.age < 30) {
+    acc.push(curr.firstName);
+  }
+  return acc;
+}, []);
+
+console.log(fname2);
+
 const reduce = users.reduce((acc, curr) => {
   if(acc[curr.age]) {
     acc[curr.age] += 1;
