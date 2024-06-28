@@ -23,3 +23,18 @@ fetchData()
     console.log(resp);
   })
   .catch(err => console.log(err))
+
+  
+
+  fetchData()
+  .then(resp => {
+    console.log(resp);
+    return resp;
+  })
+  .then(resp => {
+    return updateData(resp);
+  })
+  .then(resp => {
+    console.log(resp);
+  })
+  .catch(err => console.log(err))
