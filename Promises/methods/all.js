@@ -16,3 +16,8 @@ Promise.all([promise2, promise1,promise3])
   .then(values => {
     console.log(values);
   })
+
+
+//OP
+// (3) 
+//['resolved after 2 seconds', 'resolved after 1 seconds', 'resolved immediately']
